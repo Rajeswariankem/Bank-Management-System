@@ -1,0 +1,21 @@
+.back-to-dashboard {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    padding: 9px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.back-to-dashboard:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+    transform: translateX(-2px);
+}

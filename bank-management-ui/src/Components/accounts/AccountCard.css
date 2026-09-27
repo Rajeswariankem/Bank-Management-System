@@ -1,0 +1,289 @@
+.account-card {
+    width: 100%;
+    min-height: 360px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 5px 16px rgba(15, 23, 42, 0.08);
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.account-card:hover {
+    transform: translateY(-5px);
+    border-color: #cbd5e1;
+    box-shadow: 0 16px 35px rgba(15, 23, 42, 0.14);
+}
+
+.account-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 26px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.account-type-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+}
+
+.account-icon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #dbeafe;
+    color: #2563eb;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.account-type-section h3 {
+    margin: 0 0 5px;
+    color: #1e293b;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.account-type-section p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.account-status {
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.account-status.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.account-status.pending {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.account-status.blocked {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.account-balance-section {
+    padding: 25px 26px 20px;
+}
+
+.account-balance-section span,
+.account-number-section span {
+    display: block;
+    margin-bottom: 7px;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.account-balance-section strong {
+    display: block;
+    color: #0f172a;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.account-number-section {
+    padding: 0 26px 22px;
+}
+
+.account-number-section strong {
+    display: block;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    word-break: break-all;
+}
+
+/* Action buttons */
+
+.account-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 0 26px 22px;
+}
+
+.account-actions button {
+    min-height: 42px;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    padding: 10px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.account-actions button:hover {
+    transform: translateY(-2px);
+}
+
+.account-actions button:active {
+    transform: translateY(0);
+}
+
+/* Deposit */
+
+.deposit-button {
+    background: #ecfdf5;
+    border-color: #bbf7d0 !important;
+    color: #15803d;
+}
+
+.deposit-button:hover {
+    background: #dcfce7;
+    border-color: #86efac !important;
+    box-shadow: 0 5px 12px rgba(22, 163, 74, 0.15);
+}
+
+/* Withdraw */
+
+.withdraw-button {
+    background: #fff1f2;
+    border-color: #fecaca !important;
+    color: #b91c1c;
+}
+
+.withdraw-button:hover {
+    background: #fee2e2;
+    border-color: #fca5a5 !important;
+    box-shadow: 0 5px 12px rgba(220, 38, 38, 0.15);
+}
+
+/* Transfer */
+
+.transfer-button {
+    background: #eff6ff;
+    border-color: #bfdbfe !important;
+    color: #1d4ed8;
+}
+
+.transfer-button:hover {
+    background: #dbeafe;
+    border-color: #93c5fd !important;
+    box-shadow: 0 5px 12px rgba(37, 99, 235, 0.15);
+}
+
+/* View Details */
+
+.account-card-footer {
+    padding: 0 26px 26px;
+}
+
+.account-details-button {
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #334155;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.account-details-button:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    color: #1e293b;
+    transform: translateY(-1px);
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .account-card {
+        min-height: auto;
+    }
+
+    .account-card-header {
+        padding: 21px;
+    }
+
+    .account-balance-section {
+        padding: 22px 21px 18px;
+    }
+
+    .account-number-section {
+        padding: 0 21px 20px;
+    }
+
+    .account-actions {
+        padding: 0 21px 20px;
+        gap: 8px;
+    }
+
+    .account-card-footer {
+        padding: 0 21px 21px;
+    }
+
+    .account-balance-section strong {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .account-card-header {
+        align-items: flex-start;
+    }
+
+    .account-icon {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        font-size: 21px;
+    }
+
+    .account-type-section h3 {
+        font-size: 17px;
+    }
+
+    .account-status {
+        padding: 6px 9px;
+        font-size: 10px;
+    }
+
+    .account-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .account-actions button {
+        min-height: 44px;
+    }
+}

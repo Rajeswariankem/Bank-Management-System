@@ -1,0 +1,43 @@
+# Java / Spring Boot
+**/target/
+**/.mvn/
+*.class
+*.jar
+*.war
+
+# Node / React
+**/node_modules/
+**/dist/
+**/.vite/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Electron
+**/release/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build files
+build/
+out/
+
+# Secrets
+application-local.properties
+application-local.yml

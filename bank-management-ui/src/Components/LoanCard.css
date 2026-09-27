@@ -1,0 +1,233 @@
+.loan-card {
+    width: 100%;
+    min-width: 0;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.07);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.loan-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.12);
+}
+
+.loan-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.loan-type-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.loan-icon {
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #dbeafe;
+    color: #2563eb;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.loan-type-info {
+    min-width: 0;
+}
+
+.loan-type-info h3 {
+    margin: 0;
+    color: #172554;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+}
+
+.loan-type-info p {
+    margin: 4px 0 0;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.loan-status {
+    flex-shrink: 0;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+.loan-status.pending {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.loan-status.approved {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.loan-status.rejected {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.loan-status.disbursed {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.loan-status.closed {
+    background: #e2e8f0;
+    color: #475569;
+}
+
+.loan-status.completed {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.loan-amount-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 22px;
+}
+
+.loan-amount-section span {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.loan-amount-section strong {
+    color: #0f172a;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.loan-details {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 18px;
+}
+
+.loan-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 8px 0;
+}
+
+.loan-detail span {
+    color: #64748b;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.loan-detail strong {
+    color: #1e293b;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.loan-card-footer {
+    margin-top: 18px;
+    padding-top: 4px;
+}
+
+.loan-details-button {
+    width: 100%;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 9px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.loan-details-button:hover {
+    background: #1d4ed8;
+}
+
+.loan-details-button:active {
+    transform: scale(0.98);
+}
+
+.loan-details-button:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.25);
+    outline-offset: 2px;
+}
+
+@media (max-width: 700px) {
+    .loan-card {
+        padding: 20px;
+    }
+
+    .loan-card-header {
+        gap: 10px;
+    }
+
+    .loan-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+    }
+
+    .loan-type-info h3 {
+        font-size: 16px;
+    }
+
+    .loan-amount-section strong {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loan-card {
+        padding: 18px;
+        border-radius: 15px;
+    }
+
+    .loan-card-header {
+        align-items: flex-start;
+    }
+
+    .loan-status {
+        font-size: 9px;
+        padding: 5px 8px;
+    }
+
+    .loan-detail {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+        padding: 7px 0;
+    }
+
+    .loan-detail strong {
+        text-align: left;
+    }
+}

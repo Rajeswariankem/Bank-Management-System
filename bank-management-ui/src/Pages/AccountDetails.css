@@ -1,0 +1,239 @@
+.account-details-page {
+    min-height: calc(100vh - 70px);
+    background: #f1f5f9;
+    padding: 40px;
+}
+
+.account-details-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.account-details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.account-details-header h2 {
+    margin: 14px 0 6px;
+    color: #1e293b;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.account-details-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.account-back-button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.account-back-button:hover {
+    color: #1d4ed8;
+}
+
+.account-details-status {
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.account-details-status.active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.account-details-status.pending {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.account-details-status.closed {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.account-details-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.09);
+}
+
+.account-details-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 30px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.account-details-icon {
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbeafe;
+    color: #2563eb;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.account-details-card-header h3 {
+    margin: 0 0 5px;
+    color: #1e293b;
+    font-size: 21px;
+}
+
+.account-details-card-header p {
+    margin: 0;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.account-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.account-detail-item {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 25px 30px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.account-detail-item:nth-child(odd) {
+    border-right: 1px solid #f1f5f9;
+}
+
+.account-detail-item span {
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.account-detail-item strong {
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: 700;
+    word-break: break-word;
+}
+
+.account-detail-balance {
+    color: #16a34a !important;
+    font-size: 21px !important;
+}
+
+.account-details-loading {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1e3a8a;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.account-details-error {
+    width: 100%;
+    max-width: 600px;
+    margin: 80px auto;
+    box-sizing: border-box;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.account-details-error h3 {
+    margin: 0 0 10px;
+    color: #b91c1c;
+}
+
+.account-details-error p {
+    margin: 0 0 20px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.account-details-error button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.account-details-error button:hover {
+    background: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+
+    .account-details-page {
+        padding: 25px 20px;
+    }
+
+    .account-details-header {
+        flex-direction: column;
+    }
+
+    .account-details-status {
+        align-self: flex-start;
+    }
+
+    .account-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .account-detail-item:nth-child(odd) {
+        border-right: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .account-details-page {
+        padding: 20px 15px;
+    }
+
+    .account-details-header h2 {
+        font-size: 23px;
+    }
+
+    .account-details-card-header {
+        padding: 22px;
+    }
+
+    .account-detail-item {
+        padding: 20px 22px;
+    }
+}
